@@ -24,6 +24,11 @@ footer {
     font-family: monospace;
 }
 
+.intro-container{
+  display: flex;
+  justify-content: center;
+}
+
 .intro {
     margin: 0 auto;
     text-align: center;
@@ -68,7 +73,8 @@ footer {
     width: 20%;
     position: fixed;
     bottom: 0;
-    right: 0;
+    right: 100px;
+    z-index:-1;
 }
 
 
