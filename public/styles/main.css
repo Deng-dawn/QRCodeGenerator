@@ -24,6 +24,10 @@ footer {
     font-family: monospace;
 }
 
+.intro {
+    margin: 0 auto;
+}
+
 .blockquote {
     font-style: italic;
     padding-left: 3rem;
