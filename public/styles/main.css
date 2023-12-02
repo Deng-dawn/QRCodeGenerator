@@ -36,7 +36,6 @@ footer {
 
 .blockquote {
   font-style: italic;
-  padding-left: 3rem;
   font-size: 15px;
   line-height: 26.22px;
   font-family: Enriqueta;
@@ -44,6 +43,9 @@ footer {
 
 .blockquote p {
   font-size: 1em; /* Adjust base font size */
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 /* Mobile responsiveness */
