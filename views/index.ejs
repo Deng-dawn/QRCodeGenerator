@@ -1,0 +1,61 @@
+<!--add header-->
+<%- include("partials/header.ejs") %>  
+
+<h1>Generate Your QR Code</h1>
+<div class="blockquote">
+    <p>A free & open-source QR code generator. This page will not store any informaion.</p>
+    <p>Assist in building meaningful relationships and fostering career connections.</p>
+</div>
+</br>
+<h2>👇Enter valid URL👇</h2>
+
+
+<div class="bottom-right-plants">
+    <img src="pics/plants.webp" alt="plants">
+</div>  
+
+<form action="/generateQR" method="post">
+    <input type="text" class="inputText" name="url" placeholder="Enter URL here">
+    <button type="submit" class="genButton">🪄Generate💫</button>
+</form>
+
+<% if (qrCode) {%>
+    <!--generate a popup window for download-->
+    <div id="qrModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="<%= qrCode %>" alt="Generated QR code">
+            <p>Click outside or ✖ to exit</p>
+        </div>  
+    </div>
+    <script>
+        var modal = document.getElementById("qrModal");
+        if (modal) {
+            modal.style.display = "block";
+        }
+    </script>
+<% } %>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("qrModal");
+    console.log(modal)
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
+<!--add footer-->
+<%- include("partials/footer.ejs") %>

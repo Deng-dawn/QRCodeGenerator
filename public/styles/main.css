@@ -1,0 +1,143 @@
+body {
+    background: #DBE2EF;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    color: #3F72AF;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-family: monospace;
+}
+
+.blockquote {
+    font-style: italic;
+    padding-left: 3rem;
+    font-size: 15px;
+    line-height: 26.22px;
+    font-family: Enriqueta;
+}
+
+.bottom-right-plants{
+    width: 20%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+#qrModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-footer,
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-footer .footer-text,
+.custom-footer .footer-link {
+  display: inline;
+  margin-right: 10px; /* Add spacing between the elements if needed */
+}
+
+
+.genButton {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  /* line-height: 1.15385; */
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.genButton:hover,
+.genButton:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.genButton:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.genButton:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+.inputText {
+    background-color: #fff; /* Adjust to match your design */
+    border-radius: 1px;
+    border: 1px solid #7aa7c7;
+    box-sizing: border-box; /* This ensures padding is included in the total width and height */
+    color: #39739d;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px; /* Match the button font size */
+    height: 40px; /* Adjust this value to match the button height including padding and border */
+    margin: 0; /* Align with button margins */
+    outline: none;
+    padding: 8px .8em; /* Padding should be same as the button to align text vertically */
+    vertical-align: baseline; /* Align with the button */
+    box-shadow: none; /* Optional: Add if you want to match button style */
+  }
+  
