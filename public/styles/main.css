@@ -30,12 +30,39 @@ footer {
 }
 
 .blockquote {
-    font-style: italic;
-    padding-left: 3rem;
-    font-size: 15px;
-    line-height: 26.22px;
-    font-family: Enriqueta;
+  font-style: italic;
+  padding-left: 3rem;
+  font-size: 15px;
+  line-height: 26.22px;
+  font-family: Enriqueta;
 }
+
+.blockquote p {
+  font-size: 1em; /* Adjust base font size */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .intro h1 {
+      font-size: 1.5em;
+  }
+
+  .blockquote p {
+      font-size: 0.9em;
+  }
+
+  .intro {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+      font-size: 1.2em; /* smaller font size for very small screens */
+  }
+}
+
+
 
 .bottom-right-plants{
     width: 20%;
